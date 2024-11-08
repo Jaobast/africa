@@ -36,7 +36,7 @@ function localList() {
 }
 
 deleteAll.addEventListener('click', (e) => {
-    localStorage.clear();
+    localStorage.removeItem('listAfrica');
     list.innerHTML = "";
     wordList = [];
 });
