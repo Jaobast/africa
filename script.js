@@ -17,7 +17,7 @@ submit.addEventListener('click', (e) => {
     wordList.push(word.value);
     addWordToList(word.value);
     
-    localStorage.setItem('list', JSON.stringify(wordList));
+    localStorage.setItem('listAfrica', JSON.stringify(wordList));
     
     word.value = "";
     word.focus();
@@ -26,7 +26,7 @@ submit.addEventListener('click', (e) => {
 
 // Função para carregar a lista do localStorage e mostrar no DOM
 function localList() {
-    const itemLocalList = localStorage.getItem('list');
+    const itemLocalList = localStorage.getItem('listAfrica');
     
     if (itemLocalList) {
         wordList = JSON.parse(itemLocalList);
