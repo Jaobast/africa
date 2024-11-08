@@ -6,7 +6,6 @@ const deleteAll = document.getElementById("delete-all");
 let wordList = [];
 let number = 0;
 
-// Função para adicionar o conteúdo da lista no DOM
 function addWordToList(word) {
     const newWordToList = document.createElement("p");
     newWordToList.innerHTML = word;
@@ -24,14 +23,12 @@ submit.addEventListener('click', (e) => {
     number++;
 });
 
-// Função para carregar a lista do localStorage e mostrar no DOM
 function localList() {
     const itemLocalList = localStorage.getItem('listAfrica');
     
     if (itemLocalList) {
         wordList = JSON.parse(itemLocalList);
         
-        // Exibe cada item da lista no DOM
         wordList.forEach(word => {
             addWordToList(word);
         });
@@ -40,9 +37,8 @@ function localList() {
 
 deleteAll.addEventListener('click', (e) => {
     localStorage.clear();
-    list.innerHTML = "";  // Também limpa a exibição atual na página
-    wordList = [];        // Limpa a lista em memória
+    list.innerHTML = "";
+    wordList = [];
 });
 
-// Carrega a lista assim que a página é carregada
 localList();
