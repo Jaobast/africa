@@ -1,3 +1,40 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani';
+}
+
 body{
+    width: 100vw; height: 100vh;
+    margin-top: 20vh;
     background-color: gray;
 }
+
+.container{
+    width: 90vw;
+    margin: auto;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+p{
+    font-family: 'Cutive Mono';
+}
+
+button{
+    border: none; border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    font-size: 1rem;
+}
+
+#word{
+    width: 100%;
+
+    font-size: 1rem;
+    padding: 5px 5px 5px 15px;
+}
+
