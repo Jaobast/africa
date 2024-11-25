@@ -1,0 +1,91 @@
+.group-container{
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%; 
+}
+
+.group{
+    position: relative;
+    width: 45%;
+    height: 170px;
+    background-color: var(--lila-dark);
+    border-radius: 24px;
+}
+
+.group-titel{
+    margin-top: 15px;
+    letter-spacing: 2px;
+    text-align: center; text-transform: uppercase;
+    font-size: 30px; font-family: "Road Rage", serif; font-weight: 10;
+    color: var(--beige);
+}
+
+.group button{
+    position: absolute;
+    bottom: 12px; right: 12px;
+
+
+    background: radial-gradient(circle, #F4E6CE 50%, transparent 50%);
+    border: none; border-radius: 50%;
+}
+
+.group button i{
+    font-size: 35px;
+    color: var(--lila);
+}
+
+
+.person-container{
+    display: flex; flex-direction: column;
+    align-items: end;
+
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--lila);
+}
+
+.bttn-down{
+    position: absolute;
+    bottom: 0;
+    left: 50%; transform: translateX(-50%);
+
+    background-color: var(--lila-dark); color: var(--beige);
+    border: none; border-radius: 50px;
+    padding: 3px 50px;
+    font-size: 40px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
+}
+
+.bttn{
+    margin-top: 20px;
+    background-color: var(--lila-dark); color: var(--beige);
+    border: none; border-radius: 50px;
+    padding: 3px 30px;
+    font-size: 30px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
+}
+
+#name{
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px; border: none;
+    background-color: var(--lila-dark); color: var(--lila-light);
+    font-family: "Asap", sans-serif; font-size: 20px;
+}
+
+.name-placeholder{
+    position: absolute;
+    top: -6vh; left: 50%; transform: translateX(-50%);
+    color: var(--beige);
+    font-size: 30px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
+}
+
+.new-word-list{
+    width: 100%;
+}
+
+.new-word-list p{
+    font-family: "Asap", sans-serif; font-size: 18px;
+    color: var(--lila-light);
+    margin-bottom: 10px;
+}

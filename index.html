@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Africa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="var.css">
+    <link rel="stylesheet" href="css/var.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/group.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -13,22 +17,66 @@
 
         <h1>Africa</h1>
 
-        <div id="new-word">
-            <input type="text" name="" id="word">
+        <div class="taffel">
 
-            <div class="button-container">
-                <button id="submit">submit</button>
-                <button id="delete-all">delete all</button>
+            <div class="group-container">
+
+                <div class="group" id="group1">
+                    <p class="group-titel">Group 01</p>
+                    <button><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+    
+                <div class="group" id="group2">
+                    <p class="group-titel">Group 02</p>
+                    <button><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="person-container">
+                <input type="text" id="name" placeholder="your name">
+                <button id="send-name" class="bttn">add</button>
+                <button id="person-done" class="bttn-down">done</button>
+
+                <p class="name-placeholder">Teste</p>
+
+                <div class="new-word-list">
+                </div>
             </div>
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <div class="new-word-conatiner hidden">
+            <div id="new-word">
+                <input type="text" name="" id="word">
     
-        <h2>Added words:</h2>
-        <div id="list-words">
+                <div class="button-container">
+                                <button id="submit">submit</button>
+                <button id="delete-all">delete all</button>
+                </div>
+    
+            </div>
+        
+            <h2>Added words:</h2>
+            <div id="list-words">
+            </div>
         </div>
     
     
-        <script src="script.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/new-person.js"></script>
     </div>
     
 </body>
