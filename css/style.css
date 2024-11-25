@@ -20,7 +20,7 @@ body{
 
 .taffel{
     position: absolute;
-    width: 85vw; height: 67vh;
+    width: 85vw; height: 60vh;
     bottom: 3vh;
 }
 
@@ -28,6 +28,7 @@ h1{
     text-align: center; text-transform: uppercase;
     font-size: 130px; font-family: "Road Rage", serif; font-weight: 10;
     color: var(--beige);
+    margin-top: -20px;
 }
 
 h2{
