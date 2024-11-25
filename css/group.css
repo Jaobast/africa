@@ -75,7 +75,7 @@
 
 .name-placeholder{
     position: absolute;
-    top: -4vh; left: 50%; transform: translateX(-50%);
+    top: -6vh; left: 50%; transform: translateX(-50%);
     color: var(--beige);
     font-size: 30px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
 }
