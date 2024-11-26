@@ -23,8 +23,6 @@ group02.addEventListener('click', () => startNewPerson(groupnumber = '2'));
 function startNewPerson() {
     hiddenDiv(containerPerson, containerGroup);
     inputName.placeholder = 'your name';
-
-    nameList.innerHTML = '';
 }
 
 function hiddenDiv(remove, add) {
@@ -52,8 +50,6 @@ bttnName.addEventListener('click', (e) => {
 
         phraseArray.push({ name: currentPerson, phrases: [] });
 
-        console.log(`Group 1: ${peopleArrayGroup1}`);
-        console.log(`Group 2: ${peopleArrayGroup2}`);
     } else {
         const personObject = phraseArray.find(obj => obj.name === currentPerson);
         if (personObject) {
@@ -68,8 +64,6 @@ bttnName.addEventListener('click', (e) => {
             newWordList.appendChild(createTextElement);
         });
     }
-
-    console.log(phraseArray);
 });
 
 bttnPersonDone.addEventListener('click', () => {
