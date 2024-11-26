@@ -10,15 +10,15 @@ const bttnName = document.getElementById('send-name');
 const namePlaceholder = document.querySelector('.name-placeholder');
 const newWordList = document.querySelector('.new-word-list');
 
-const nameList = document.querySelector('.name-list');
-
 let phraseArray = [];
 let currentPerson = null;
 
-let peopleArray = [];
+let peopleArrayGroup1 = [];
+let peopleArrayGroup2 = [];
+let groupnumber = null;
 
-group01.addEventListener('click', () => startNewPerson());
-group02.addEventListener('click', () => startNewPerson());
+group01.addEventListener('click', () => startNewPerson(groupnumber = '1'));
+group02.addEventListener('click', () => startNewPerson(groupnumber = '2'));
 
 function startNewPerson() {
     hiddenDiv(containerPerson, containerGroup);
@@ -32,21 +32,28 @@ function hiddenDiv(remove, add) {
     add.classList.add('hidden');
 }
 
-
-
 bttnName.addEventListener('click', (e) => {
     if (inputName.placeholder.includes('your name')) {
         currentPerson = inputName.value;
         namePlaceholder.innerHTML = currentPerson;
-        peopleArray.push(inputName.value);
+
+        if (groupnumber === '1') {
+            if (!peopleArrayGroup1.includes(inputName.value)) {
+                peopleArrayGroup1.push(inputName.value);
+            }
+        } else if (groupnumber === '2') {
+            if (!peopleArrayGroup2.includes(inputName.value)) {
+                peopleArrayGroup2.push(inputName.value);
+            }
+        }
 
         inputName.value = '';
         inputName.placeholder = 'add a phrase';
 
         phraseArray.push({ name: currentPerson, phrases: [] });
 
-        console.log(peopleArray);
-        
+        console.log(`Group 1: ${peopleArrayGroup1}`);
+        console.log(`Group 2: ${peopleArrayGroup2}`);
     } else {
         const personObject = phraseArray.find(obj => obj.name === currentPerson);
         if (personObject) {
@@ -65,20 +72,24 @@ bttnName.addEventListener('click', (e) => {
     console.log(phraseArray);
 });
 
-
-
 bttnPersonDone.addEventListener('click', () => {
-
     currentPerson = null;
     hiddenDiv(containerGroup, containerPerson);
     namePlaceholder.innerHTML = '';
     newWordList.innerHTML = '';
 
-    if (peopleArray){
-        peopleArray.forEach(person => {
-            const createNameText = document.createElement('p');
-            createNameText.innerHTML = person;
-            nameList.appendChild(createNameText);
+    const nameList = document.getElementById(`group${groupnumber}`).querySelector('.name-list');
+    const currentPeopleArray = groupnumber === '1' ? peopleArrayGroup1 : peopleArrayGroup2;
+
+    if (currentPeopleArray) {
+        currentPeopleArray.forEach(person => {
+            if (![...nameList.children].some(child => child.innerHTML === person)) {
+                const createNameText = document.createElement('p');
+                createNameText.innerHTML = person;
+                nameList.appendChild(createNameText);
+            }
         });
     }
+
+    groupnumber = null;
 });
