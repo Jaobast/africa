@@ -23,6 +23,8 @@ group02.addEventListener('click', () => startNewPerson());
 function startNewPerson() {
     hiddenDiv(containerPerson, containerGroup);
     inputName.placeholder = 'your name';
+
+    nameList.innerHTML = '';
 }
 
 function hiddenDiv(remove, add) {
