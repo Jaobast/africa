@@ -13,7 +13,7 @@ body{
         rgba(97, 60, 157, 1) 0%,
         rgba(34, 21, 55, 1) 100%
     );
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .hidden{
