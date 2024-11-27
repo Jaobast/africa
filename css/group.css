@@ -7,32 +7,33 @@
 
 .group{
     position: relative;
+
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+
+
     width: 45%;
-    height: 170px;
-    background-color: var(--lila-dark);
+    background-color: var(--orange);
     border-radius: 24px;
+    height: fit-content;
 }
 
 .group-titel{
     margin-top: 15px;
     letter-spacing: 2px;
     text-align: center; text-transform: uppercase;
-    font-size: 30px; font-family: "Road Rage", serif; font-weight: 10;
+    font-size: 35px; font-family: "Road Rage", serif; font-weight: 10;
     color: var(--beige);
 }
 
 .group button{
-    position: absolute;
-    bottom: 12px; right: 12px;
 
+    background-color: var(--beige); color: var(--orange);
+    font-size: 27px; font-family: "Road Rage", serif; font-weight: 10;
+    border: none; border-radius: 50px;
+    margin-bottom: 20px;
 
-    background: radial-gradient(circle, #F4E6CE 50%, transparent 50%);
-    border: none; border-radius: 50%;
-}
-
-.group button i{
-    font-size: 35px;
-    color: var(--lila);
+    padding: 5px 18px;
 }
 
 
@@ -50,7 +51,7 @@
     bottom: 0;
     left: 50%; transform: translateX(-50%);
 
-    background-color: var(--lila-dark); color: var(--beige);
+    background-color: var(--orange); color: var(--beige);
     border: none; border-radius: 50px;
     padding: 3px 50px;
     font-size: 40px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
@@ -58,7 +59,7 @@
 
 .bttn{
     margin-top: 20px;
-    background-color: var(--lila-dark); color: var(--beige);
+    background-color: var(--orange); color: var(--beige);
     border: none; border-radius: 50px;
     padding: 3px 30px;
     font-size: 30px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
@@ -68,7 +69,7 @@
     width: 100%;
     padding: 10px 10px 10px 30px;
     border-radius: 50px; border: none;
-    background-color: var(--lila-dark); color: var(--lila-light);
+    background-color: var(--orange); color: var(--lila-light);
     font-family: "Asap", sans-serif; font-size: 20px;
 }
 
@@ -81,6 +82,7 @@
 
 .new-word-list{
     width: 100%;
+
 }
 
 .new-word-list p{
@@ -91,6 +93,7 @@
 
 .name-list{
     padding: 15px 0 15px 15px;
+    width: 100%;
 }
 
 .name-list p{
