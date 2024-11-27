@@ -27,14 +27,15 @@ body{
 
 .container-pattern{
     position: absolute;
+    left: 0;
 }
 
 .pattern-container {
     position: relative;
     top: 0;
-    left: -7.5vw;
     z-index: -100;
     width: 100vw;
+    
 }
 
 .container-pattern img {
@@ -61,12 +62,12 @@ body{
 .container-pattern-bottom{
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 .pattern-container-bottom {
     position: relative;
     bottom: 0;
-    left: -7.5vw;
     z-index: -100;
     width: 100vw;
     height: 10vh;
