@@ -1,0 +1,50 @@
+.game-container{
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.sentence{
+    color: white;
+    font-family: "Asap", sans-serif; font-size: 18px;
+}
+
+.bttn-conatiner{
+    position: absolute;
+    bottom: 2vh;
+
+    display: flex;
+    gap: 20px;
+}
+
+.bttn-conatiner button{
+    width: 150px;
+    background-color: var(--orange); color: var(--beige);
+    border: none; border-radius: 50px;
+    padding: 3px 0;
+    font-size: 40px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
+}
+
+#right{
+    background-color: #4D8D22;
+}
+
+.next-group{
+
+    color: var(--beige);
+    font-size: 30px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
+}
+
+.still{
+    color: white;
+    font-family: "Asap", sans-serif; font-size: 18px;
+}
+
+.next-still-conatiner{
+    position: absolute;
+    bottom: 10vh; left: 50%; transform: translateX(-50%);
+
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    gap: 40px;
+}

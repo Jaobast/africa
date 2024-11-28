@@ -7,6 +7,7 @@
     <title>Africa</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/group.css">
+    <link rel="stylesheet" href="css/game.css">
     <link rel="stylesheet" href="css/var.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
           integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -59,13 +60,64 @@
                 <button id="send-name" class="bttn">add</button>
                 <button id="person-done" class="bttn-down">done</button>
 
-                <p class="name-placeholder"></p>
+                <p class="name-placeholder name-top"></p>
 
                 <div class="new-word-list">
                 </div>
             </div>
 
+
+            <div class="phase-container hidden">
+                <button id="phase1">Phase 01</button>
+                <button id="phase2">Phase 02</button>
+                <button id="phase3">Phase 03</button>
+
+            </div>
+
+
+            <div class="game-container hidden">
+                <p class="group-placeholder name-top">Group 01</p>
+
+                <p class="sentence">frases</p>
+
+                <div class="bttn-conatiner">
+                    <button id="right">right</button>
+                    <button id="discard">discard</button>
+                </div>
+            </div>
+
+
+            <div class="next-group-container hidden">
+                <p class="phase-placeholder name-top">Phase 01</p>
+
+
+                <div class="group-container">
+
+                    <div class="group" id="group1">
+                        <p class="group-titel">Group 01</p>
+    
+                        <div class="name-list"></div>
+                    </div>
+        
+                    <div class="group" id="group2">
+                        <p class="group-titel">Group 02</p>
+    
+                        <div class="name-list"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="next-still-conatiner">
+                    <p class="next-group">next: group 02</p>
+                    <p class="still">still</p>
+                </div>
+
+                <button id="next-group-bttn" class="bttn-down">start</button>
+            </div>
+
         </div>
+
 
 
 

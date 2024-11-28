@@ -73,7 +73,7 @@
     font-family: "Asap", sans-serif; font-size: 20px;
 }
 
-.name-placeholder{
+.name-top{
     position: absolute;
     top: -7vh; left: 50%; transform: translateX(-50%);
     color: var(--beige);
@@ -99,4 +99,24 @@
 .name-list p{
     font-family: "Asap", sans-serif; font-size: 18px;
     color: var(--beige);
+}
+
+
+
+
+
+
+.phase-container{
+    margin-top: 10vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    gap: 30px;
+
+}
+
+.phase-container button{
+    background-color: var(--orange); color: var(--beige);
+    border: none; border-radius: 50px;
+    padding: 10px 50px;
+    font-size: 30px; font-family: "Road Rage", serif; font-weight: 10; text-transform: uppercase;
 }

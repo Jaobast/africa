@@ -27,7 +27,7 @@ body{
 
 .taffel{
     position: absolute;
-    width: 85vw; height: 64vh; overflow: hidden;
+    width: 85vw; height: 64vh;
     bottom: 3vh;
 }
 
